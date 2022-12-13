@@ -5,7 +5,7 @@ while inf == true do
         turtle.refuel();
     end
     for loop = 1, 16, 1 do
-        for line = 1, 16, 1 do
+        for line = 1, 15, 1 do
             turtle.dig();
             turtle.digDown();
             turtle.digUp();
