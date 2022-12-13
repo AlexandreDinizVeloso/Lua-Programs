@@ -2,7 +2,12 @@ local inf = true;
 while inf == true do
     local fuel = turtle.getFuelLevel();
     if fuel <= 300 then
-        turtle.refuel();
+        for slot = 1, 16 do
+            turtle.select(slot)
+            if turtle.refuel(0) then
+                turtle.refuel();
+            end
+        end
     end
     for loop = 1, 16, 1 do
         for line = 1, 15, 1 do
