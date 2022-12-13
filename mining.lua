@@ -1,6 +1,7 @@
 local inf = true;
 while inf == true do
-    if turtle.getFuelLevel() <= 300 then
+    local fuel = turtle.getFuelLevel();
+    if fuel <= 300 then
         turtle.refuel();
     end
     for loop = 1, 16, 1 do
@@ -12,7 +13,7 @@ while inf == true do
         end
         turtle.digDown();
         turtle.digUp();
-        if loop % 2 == 0 and loop ~= 6 then
+        if loop % 2 == 0 and loop ~= 16 then
             turtle.turnLeft();
             turtle.dig();
             turtle.forward();
