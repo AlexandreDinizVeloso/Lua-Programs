@@ -8,11 +8,9 @@ while inf == true do
         for line = 1, 15, 1 do
             turtle.dig();
             turtle.digDown();
-            turtle.digUp();
             turtle.forward();
         end
         turtle.digDown();
-        turtle.digUp();
         if loop % 2 == 0 and loop ~= 16 then
             turtle.turnLeft();
             turtle.dig();
@@ -30,8 +28,6 @@ while inf == true do
         turtle.forward();
     end
     turtle.turnRight();
-    turtle.down();
-    turtle.digDown();
     turtle.down();
     turtle.digDown();
     turtle.down();
